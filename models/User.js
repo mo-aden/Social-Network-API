@@ -26,7 +26,6 @@ const userSchema = new Schema(
 );
 
 //virtual friendCount to retrieve length of users friends
-
 userSchema.virtual("friendCount").get(function () {
   return `${this.friends.length}`;
 });
